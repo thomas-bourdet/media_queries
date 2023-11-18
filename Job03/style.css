@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    background-color: #88c1d0;
+    border-radius: 20px;
+}
+
+@media (min-width: 1600px) {
+    .box {
+        width: calc(25%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+    .box {
+        width: calc(50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .box {
+        width: calc(100%);
+        margin-bottom: 10px;
+    }
+}
